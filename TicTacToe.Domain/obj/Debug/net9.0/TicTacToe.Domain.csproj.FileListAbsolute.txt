@@ -1,0 +1,11 @@
+C:\Users\Laem0\Desktop\Desarrollos\TicTacToe\TicTacToe.Domain\bin\Debug\net9.0\TicTacToe.Domain.deps.json
+C:\Users\Laem0\Desktop\Desarrollos\TicTacToe\TicTacToe.Domain\bin\Debug\net9.0\TicTacToe.Domain.dll
+C:\Users\Laem0\Desktop\Desarrollos\TicTacToe\TicTacToe.Domain\bin\Debug\net9.0\TicTacToe.Domain.pdb
+C:\Users\Laem0\Desktop\Desarrollos\TicTacToe\TicTacToe.Domain\obj\Debug\net9.0\TicTacToe.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Laem0\Desktop\Desarrollos\TicTacToe\TicTacToe.Domain\obj\Debug\net9.0\TicTacToe.Domain.AssemblyInfoInputs.cache
+C:\Users\Laem0\Desktop\Desarrollos\TicTacToe\TicTacToe.Domain\obj\Debug\net9.0\TicTacToe.Domain.AssemblyInfo.cs
+C:\Users\Laem0\Desktop\Desarrollos\TicTacToe\TicTacToe.Domain\obj\Debug\net9.0\TicTacToe.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Laem0\Desktop\Desarrollos\TicTacToe\TicTacToe.Domain\obj\Debug\net9.0\TicTacToe.Domain.dll
+C:\Users\Laem0\Desktop\Desarrollos\TicTacToe\TicTacToe.Domain\obj\Debug\net9.0\refint\TicTacToe.Domain.dll
+C:\Users\Laem0\Desktop\Desarrollos\TicTacToe\TicTacToe.Domain\obj\Debug\net9.0\TicTacToe.Domain.pdb
+C:\Users\Laem0\Desktop\Desarrollos\TicTacToe\TicTacToe.Domain\obj\Debug\net9.0\ref\TicTacToe.Domain.dll

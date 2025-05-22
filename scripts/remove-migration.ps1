@@ -1,0 +1,1 @@
+dotnet ef migrations remove --project TicTacToe.Persistence --startup-project TicTacToe.API

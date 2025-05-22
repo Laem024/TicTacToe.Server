@@ -1,0 +1,1 @@
+dotnet ef migrations add $args[0] --project TicTacToe.Persistence --startup-project TicTacToe.API

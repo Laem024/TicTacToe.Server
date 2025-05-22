@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\TicTacToe.Application\TicTacToe.Application.csproj" />
+    <ProjectReference Include="..\TicTacToe.Domain\TicTacToe.Domain.csproj" />
+    <ProjectReference Include="..\TicTacToe.Persistence\TicTacToe.Persistence.csproj" />
+    <ProjectReference Include="..\TicTacToe.Shared\TicTacToe.Shared.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

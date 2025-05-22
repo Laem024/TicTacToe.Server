@@ -1,0 +1,332 @@
+2025-05-06 13:11:36.840 -04:00 [INF] Now listening on: http://localhost:5083
+2025-05-06 13:11:36.915 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-06 13:11:36.918 -04:00 [INF] Hosting environment: Development
+2025-05-06 13:11:36.921 -04:00 [INF] Content root path: C:\Users\Laem0\Desktop\Desarrollos\TicTacToe\TicTacToe.API
+2025-05-06 13:11:44.736 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5083/ - null null
+2025-05-06 13:11:44.800 -04:00 [WRN] Failed to determine the https port for redirect.
+2025-05-06 13:11:44.811 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5083/ - 404 0 null 78.7119ms
+2025-05-06 13:11:44.845 -04:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5083/, Response status code: 404
+2025-05-06 13:12:19.280 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5083/api/user/login - application/json 62
+2025-05-06 13:12:19.320 -04:00 [INF] Executing endpoint 'TicTacToe.API.Controllers.UserController.Login (TicTacToe.API)'
+2025-05-06 13:12:19.367 -04:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TicTacToe.Shared.DTO.User.UserLoginDTO) on controller TicTacToe.API.Controllers.UserController (TicTacToe.API).
+2025-05-06 13:12:21.110 -04:00 [INF] Executed DbCommand (49ms) [Parameters=[@__email_0='?' (Size = 320)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[user_email], [u].[password], [u].[user_name]
+FROM [users] AS [u]
+WHERE [u].[user_email] = @__email_0
+2025-05-06 13:12:21.190 -04:00 [WRN] Recurso no encontrado. TraceId: 0HNCCO49U8RD7:00000001. Detalle: Email o contraseña erroneos.
+2025-05-06 13:12:21.203 -04:00 [INF] Executing NotFoundObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-05-06 13:12:21.252 -04:00 [INF] Executed action TicTacToe.API.Controllers.UserController.Login (TicTacToe.API) in 1875.8939ms
+2025-05-06 13:12:21.256 -04:00 [INF] Executed endpoint 'TicTacToe.API.Controllers.UserController.Login (TicTacToe.API)'
+2025-05-06 13:12:21.266 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5083/api/user/login - 404 null application/problem+json; charset=utf-8 1986.6715ms
+2025-05-06 13:12:26.766 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5083/api/user/login - application/json 61
+2025-05-06 13:12:26.772 -04:00 [INF] Executing endpoint 'TicTacToe.API.Controllers.UserController.Login (TicTacToe.API)'
+2025-05-06 13:12:26.775 -04:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TicTacToe.Shared.DTO.User.UserLoginDTO) on controller TicTacToe.API.Controllers.UserController (TicTacToe.API).
+2025-05-06 13:12:26.829 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__email_0='?' (Size = 320)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[user_email], [u].[password], [u].[user_name]
+FROM [users] AS [u]
+WHERE [u].[user_email] = @__email_0
+2025-05-06 13:12:26.836 -04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-06 13:12:26.852 -04:00 [INF] Executed action TicTacToe.API.Controllers.UserController.Login (TicTacToe.API) in 72.8615ms
+2025-05-06 13:12:26.854 -04:00 [INF] Executed endpoint 'TicTacToe.API.Controllers.UserController.Login (TicTacToe.API)'
+2025-05-06 13:12:26.858 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5083/api/user/login - 200 null application/json; charset=utf-8 91.7209ms
+2025-05-06 13:12:56.482 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5083/api/user/signup - application/json 109
+2025-05-06 13:12:56.489 -04:00 [INF] Executing endpoint 'TicTacToe.API.Controllers.UserController.SignUp (TicTacToe.API)'
+2025-05-06 13:12:56.527 -04:00 [INF] Route matched with {action = "SignUp", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignUp(TicTacToe.Shared.DTO.User.UserSignUpDTO) on controller TicTacToe.API.Controllers.UserController (TicTacToe.API).
+2025-05-06 13:12:56.551 -04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-05-06 13:12:56.570 -04:00 [INF] Executed action TicTacToe.API.Controllers.UserController.SignUp (TicTacToe.API) in 38.6367ms
+2025-05-06 13:12:56.574 -04:00 [INF] Executed endpoint 'TicTacToe.API.Controllers.UserController.SignUp (TicTacToe.API)'
+2025-05-06 13:12:56.577 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5083/api/user/signup - 400 null application/problem+json; charset=utf-8 95.525ms
+2025-05-06 13:13:09.087 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5083/api/user/signup - application/json 119
+2025-05-06 13:13:09.091 -04:00 [INF] Executing endpoint 'TicTacToe.API.Controllers.UserController.SignUp (TicTacToe.API)'
+2025-05-06 13:13:09.093 -04:00 [INF] Route matched with {action = "SignUp", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignUp(TicTacToe.Shared.DTO.User.UserSignUpDTO) on controller TicTacToe.API.Controllers.UserController (TicTacToe.API).
+2025-05-06 13:13:09.227 -04:00 [INF] Executed DbCommand (9ms) [Parameters=[@__email_0='?' (Size = 320)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [users] AS [u]
+        WHERE [u].[user_email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-06 13:13:09.238 -04:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [users] AS [u]
+        WHERE [u].[user_name] = @__userName_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-06 13:13:09.242 -04:00 [WRN] Solicitud incorrecta. TraceId: 0HNCCO49U8RD7:00000004. Error: El nombre de usuario ya está en uso.
+2025-05-06 13:13:09.244 -04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-05-06 13:13:09.245 -04:00 [INF] Executed action TicTacToe.API.Controllers.UserController.SignUp (TicTacToe.API) in 151.2776ms
+2025-05-06 13:13:09.247 -04:00 [INF] Executed endpoint 'TicTacToe.API.Controllers.UserController.SignUp (TicTacToe.API)'
+2025-05-06 13:13:09.248 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5083/api/user/signup - 400 null application/problem+json; charset=utf-8 161.0233ms
+2025-05-06 13:14:27.875 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5083/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-06 13:14:27.884 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5083/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 9.2963ms
+2025-05-06 13:14:28.030 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5083/openapi/v1.json - null null
+2025-05-06 13:14:28.037 -04:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-05-06 13:14:28.195 -04:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-05-06 13:14:28.198 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5083/openapi/v1.json - 200 null application/json;charset=utf-8 167.343ms
+2025-05-06 13:20:03.648 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5083/swagger/index.html - null null
+2025-05-06 13:20:03.736 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5083/swagger/index.html - 200 null text/html;charset=utf-8 87.8462ms
+2025-05-06 13:20:03.770 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5083/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-06 13:20:03.778 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5083/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 8.2787ms
+2025-05-06 13:20:03.893 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5083/openapi/v1.json - null null
+2025-05-06 13:20:03.898 -04:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-05-06 13:20:03.905 -04:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-05-06 13:20:03.907 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5083/openapi/v1.json - 200 null application/json;charset=utf-8 14.1628ms
+2025-05-06 16:00:17.889 -04:00 [INF] Now listening on: http://localhost:5083
+2025-05-06 16:00:17.939 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-06 16:00:17.942 -04:00 [INF] Hosting environment: Development
+2025-05-06 16:00:17.944 -04:00 [INF] Content root path: C:\Users\Laem0\Desktop\Desarrollos\TicTacToe\TicTacToe.API
+2025-05-06 16:00:34.528 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5083/api/user/signup - application/json 121
+2025-05-06 16:00:34.569 -04:00 [WRN] Failed to determine the https port for redirect.
+2025-05-06 16:00:34.575 -04:00 [INF] Executing endpoint 'TicTacToe.API.Controllers.UserController.SignUp (TicTacToe.API)'
+2025-05-06 16:00:34.631 -04:00 [INF] Route matched with {action = "SignUp", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignUp(TicTacToe.Shared.DTO.User.UserSignUpDTO) on controller TicTacToe.API.Controllers.UserController (TicTacToe.API).
+2025-05-06 16:00:36.283 -04:00 [INF] Executed DbCommand (51ms) [Parameters=[@__email_0='?' (Size = 320)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [users] AS [u]
+        WHERE [u].[user_email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-06 16:00:36.346 -04:00 [INF] Executed DbCommand (7ms) [Parameters=[@__userName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [users] AS [u]
+        WHERE [u].[user_name] = @__userName_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-06 16:00:36.599 -04:00 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (Size = 320), @p1='?' (Size = 256), @p2='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [users] ([user_email], [password], [user_name])
+OUTPUT INSERTED.[user_id]
+VALUES (@p0, @p1, @p2);
+2025-05-06 16:00:36.655 -04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-06 16:00:36.690 -04:00 [INF] Executed action TicTacToe.API.Controllers.UserController.SignUp (TicTacToe.API) in 2046.4473ms
+2025-05-06 16:00:36.699 -04:00 [INF] Executed endpoint 'TicTacToe.API.Controllers.UserController.SignUp (TicTacToe.API)'
+2025-05-06 16:00:36.713 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5083/api/user/signup - 200 null application/json; charset=utf-8 2186.9308ms
+2025-05-06 16:03:48.965 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5083/api/user/login - application/json 62
+2025-05-06 16:03:48.970 -04:00 [INF] Executing endpoint 'TicTacToe.API.Controllers.UserController.Login (TicTacToe.API)'
+2025-05-06 16:03:48.983 -04:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TicTacToe.Shared.DTO.User.UserLoginDTO) on controller TicTacToe.API.Controllers.UserController (TicTacToe.API).
+2025-05-06 16:03:49.104 -04:00 [INF] Executed DbCommand (40ms) [Parameters=[@__email_0='?' (Size = 320)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[user_email], [u].[password], [u].[user_name]
+FROM [users] AS [u]
+WHERE [u].[user_email] = @__email_0
+2025-05-06 16:03:49.166 -04:00 [WRN] Recurso no encontrado. TraceId: 0HNCCR2KRFO4G:00000001. Detalle: Email o contraseña erroneos.
+2025-05-06 16:03:49.174 -04:00 [INF] Executing NotFoundObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-05-06 16:03:49.195 -04:00 [INF] Executed action TicTacToe.API.Controllers.UserController.Login (TicTacToe.API) in 207.4264ms
+2025-05-06 16:03:49.198 -04:00 [INF] Executed endpoint 'TicTacToe.API.Controllers.UserController.Login (TicTacToe.API)'
+2025-05-06 16:03:49.202 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5083/api/user/login - 404 null application/problem+json; charset=utf-8 236.8582ms
+2025-05-06 16:05:28.444 -04:00 [INF] Now listening on: http://localhost:5083
+2025-05-06 16:05:28.499 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-06 16:05:28.502 -04:00 [INF] Hosting environment: Development
+2025-05-06 16:05:28.505 -04:00 [INF] Content root path: C:\Users\Laem0\Desktop\Desarrollos\TicTacToe\TicTacToe.API
+2025-05-06 16:05:32.775 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5083/api/user/login - application/json 62
+2025-05-06 16:05:32.833 -04:00 [WRN] Failed to determine the https port for redirect.
+2025-05-06 16:05:32.838 -04:00 [INF] Executing endpoint 'TicTacToe.API.Controllers.UserController.Login (TicTacToe.API)'
+2025-05-06 16:05:32.889 -04:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TicTacToe.Shared.DTO.User.UserLoginDTO) on controller TicTacToe.API.Controllers.UserController (TicTacToe.API).
+2025-05-06 16:05:34.323 -04:00 [INF] Executed DbCommand (47ms) [Parameters=[@__email_0='?' (Size = 320)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[user_email], [u].[password], [u].[user_name]
+FROM [users] AS [u]
+WHERE [u].[user_email] = @__email_0
+2025-05-06 16:05:34.466 -04:00 [WRN] Recurso no encontrado. TraceId: 0HNCCR5DO1JBK:00000001. Detalle: Email o contraseña erroneos.
+2025-05-06 16:05:34.485 -04:00 [INF] Executing NotFoundObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-05-06 16:05:34.539 -04:00 [INF] Executed action TicTacToe.API.Controllers.UserController.Login (TicTacToe.API) in 1637.5481ms
+2025-05-06 16:05:34.553 -04:00 [INF] Executed endpoint 'TicTacToe.API.Controllers.UserController.Login (TicTacToe.API)'
+2025-05-06 16:05:34.573 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5083/api/user/login - 404 null application/problem+json; charset=utf-8 1799.6007ms
+2025-05-06 16:05:44.815 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5083/api/user/signup - application/json 121
+2025-05-06 16:05:44.830 -04:00 [INF] Executing endpoint 'TicTacToe.API.Controllers.UserController.SignUp (TicTacToe.API)'
+2025-05-06 16:05:44.843 -04:00 [INF] Route matched with {action = "SignUp", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignUp(TicTacToe.Shared.DTO.User.UserSignUpDTO) on controller TicTacToe.API.Controllers.UserController (TicTacToe.API).
+2025-05-06 16:05:44.939 -04:00 [INF] Executed DbCommand (5ms) [Parameters=[@__email_0='?' (Size = 320)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [users] AS [u]
+        WHERE [u].[user_email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-05-06 16:05:44.950 -04:00 [WRN] Solicitud incorrecta. TraceId: 0HNCCR5DO1JBK:00000002. Error: Ya existe un usuario con ese correo.
+2025-05-06 16:05:44.956 -04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-05-06 16:05:44.971 -04:00 [INF] Executed action TicTacToe.API.Controllers.UserController.SignUp (TicTacToe.API) in 118.5656ms
+2025-05-06 16:05:44.976 -04:00 [INF] Executed endpoint 'TicTacToe.API.Controllers.UserController.SignUp (TicTacToe.API)'
+2025-05-06 16:05:44.981 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5083/api/user/signup - 400 null application/problem+json; charset=utf-8 167.3412ms
+2025-05-06 16:06:51.607 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5083/api/user/login - application/json 129
+2025-05-06 16:06:51.615 -04:00 [INF] Executing endpoint 'TicTacToe.API.Controllers.UserController.Login (TicTacToe.API)'
+2025-05-06 16:06:51.619 -04:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TicTacToe.Shared.DTO.User.UserLoginDTO) on controller TicTacToe.API.Controllers.UserController (TicTacToe.API).
+2025-05-06 16:06:51.755 -04:00 [INF] Executed DbCommand (35ms) [Parameters=[@__email_0='?' (Size = 320)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[user_email], [u].[password], [u].[user_name]
+FROM [users] AS [u]
+WHERE [u].[user_email] = @__email_0
+2025-05-06 16:06:51.829 -04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-06 16:06:51.849 -04:00 [INF] Executed action TicTacToe.API.Controllers.UserController.Login (TicTacToe.API) in 224.6273ms
+2025-05-06 16:06:51.852 -04:00 [INF] Executed endpoint 'TicTacToe.API.Controllers.UserController.Login (TicTacToe.API)'
+2025-05-06 16:06:51.856 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5083/api/user/login - 200 null application/json; charset=utf-8 248.0926ms
+2025-05-06 16:10:52.465 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5083/api/user/login - application/json 129
+2025-05-06 16:10:52.471 -04:00 [INF] Executing endpoint 'TicTacToe.API.Controllers.UserController.Login (TicTacToe.API)'
+2025-05-06 16:10:52.484 -04:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TicTacToe.Shared.DTO.User.UserLoginDTO) on controller TicTacToe.API.Controllers.UserController (TicTacToe.API).
+2025-05-06 16:10:52.735 -04:00 [INF] Executed DbCommand (239ms) [Parameters=[@__email_0='?' (Size = 320)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[user_email], [u].[password], [u].[user_name]
+FROM [users] AS [u]
+WHERE [u].[user_email] = @__email_0
+2025-05-06 16:10:52.805 -04:00 [WRN] Recurso no encontrado. TraceId: 0HNCCR5DO1JBO:00000001. Detalle: Email o contraseña erroneos.
+2025-05-06 16:10:52.809 -04:00 [INF] Executing NotFoundObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-05-06 16:10:52.817 -04:00 [INF] Executed action TicTacToe.API.Controllers.UserController.Login (TicTacToe.API) in 328.3586ms
+2025-05-06 16:10:52.822 -04:00 [INF] Executed endpoint 'TicTacToe.API.Controllers.UserController.Login (TicTacToe.API)'
+2025-05-06 16:10:52.825 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5083/api/user/login - 404 null application/problem+json; charset=utf-8 360.7785ms
+2025-05-06 16:11:20.593 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5083/api/user/login - application/json 62
+2025-05-06 16:11:20.601 -04:00 [INF] Executing endpoint 'TicTacToe.API.Controllers.UserController.Login (TicTacToe.API)'
+2025-05-06 16:11:20.604 -04:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TicTacToe.Shared.DTO.User.UserLoginDTO) on controller TicTacToe.API.Controllers.UserController (TicTacToe.API).
+2025-05-06 16:11:20.614 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 320)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[user_email], [u].[password], [u].[user_name]
+FROM [users] AS [u]
+WHERE [u].[user_email] = @__email_0
+2025-05-06 16:11:20.673 -04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-06 16:11:20.680 -04:00 [INF] Executed action TicTacToe.API.Controllers.UserController.Login (TicTacToe.API) in 69.3604ms
+2025-05-06 16:11:20.683 -04:00 [INF] Executed endpoint 'TicTacToe.API.Controllers.UserController.Login (TicTacToe.API)'
+2025-05-06 16:11:20.685 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5083/api/user/login - 200 null application/json; charset=utf-8 92.2202ms
+2025-05-06 16:11:24.041 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5083/api/user/login - application/json 63
+2025-05-06 16:11:24.045 -04:00 [INF] Executing endpoint 'TicTacToe.API.Controllers.UserController.Login (TicTacToe.API)'
+2025-05-06 16:11:24.046 -04:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TicTacToe.Shared.DTO.User.UserLoginDTO) on controller TicTacToe.API.Controllers.UserController (TicTacToe.API).
+2025-05-06 16:11:24.062 -04:00 [INF] Executed DbCommand (10ms) [Parameters=[@__email_0='?' (Size = 320)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[user_email], [u].[password], [u].[user_name]
+FROM [users] AS [u]
+WHERE [u].[user_email] = @__email_0
+2025-05-06 16:11:24.118 -04:00 [WRN] Recurso no encontrado. TraceId: 0HNCCR5DO1JBO:00000003. Detalle: Email o contraseña erroneos.
+2025-05-06 16:11:24.123 -04:00 [INF] Executing NotFoundObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-05-06 16:11:24.127 -04:00 [INF] Executed action TicTacToe.API.Controllers.UserController.Login (TicTacToe.API) in 77.2512ms
+2025-05-06 16:11:24.131 -04:00 [INF] Executed endpoint 'TicTacToe.API.Controllers.UserController.Login (TicTacToe.API)'
+2025-05-06 16:11:24.135 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5083/api/user/login - 404 null application/problem+json; charset=utf-8 94.4266ms
+2025-05-06 16:14:24.412 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5083/api/user/login - application/json 64
+2025-05-06 16:14:24.423 -04:00 [INF] Executing endpoint 'TicTacToe.API.Controllers.UserController.Login (TicTacToe.API)'
+2025-05-06 16:14:24.434 -04:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TicTacToe.Shared.DTO.User.UserLoginDTO) on controller TicTacToe.API.Controllers.UserController (TicTacToe.API).
+2025-05-06 16:14:24.491 -04:00 [INF] Executed DbCommand (40ms) [Parameters=[@__email_0='?' (Size = 320)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[user_email], [u].[password], [u].[user_name]
+FROM [users] AS [u]
+WHERE [u].[user_email] = @__email_0
+2025-05-06 16:14:24.497 -04:00 [WRN] Recurso no encontrado. TraceId: 0HNCCR5DO1JBQ:00000001. Detalle: Email o contraseña erroneos.
+2025-05-06 16:14:24.500 -04:00 [INF] Executing NotFoundObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-05-06 16:14:24.509 -04:00 [INF] Executed action TicTacToe.API.Controllers.UserController.Login (TicTacToe.API) in 67.2681ms
+2025-05-06 16:14:24.514 -04:00 [INF] Executed endpoint 'TicTacToe.API.Controllers.UserController.Login (TicTacToe.API)'
+2025-05-06 16:14:24.519 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5083/api/user/login - 404 null application/problem+json; charset=utf-8 106.0619ms
+2025-05-06 16:14:28.242 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5083/api/user/login - application/json 63
+2025-05-06 16:14:28.251 -04:00 [INF] Executing endpoint 'TicTacToe.API.Controllers.UserController.Login (TicTacToe.API)'
+2025-05-06 16:14:28.254 -04:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TicTacToe.Shared.DTO.User.UserLoginDTO) on controller TicTacToe.API.Controllers.UserController (TicTacToe.API).
+2025-05-06 16:14:28.264 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 320)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[user_email], [u].[password], [u].[user_name]
+FROM [users] AS [u]
+WHERE [u].[user_email] = @__email_0
+2025-05-06 16:14:28.267 -04:00 [WRN] Recurso no encontrado. TraceId: 0HNCCR5DO1JBQ:00000002. Detalle: Email o contraseña erroneos.
+2025-05-06 16:14:28.272 -04:00 [INF] Executing NotFoundObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-05-06 16:14:28.275 -04:00 [INF] Executed action TicTacToe.API.Controllers.UserController.Login (TicTacToe.API) in 15.8122ms
+2025-05-06 16:14:28.279 -04:00 [INF] Executed endpoint 'TicTacToe.API.Controllers.UserController.Login (TicTacToe.API)'
+2025-05-06 16:14:28.282 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5083/api/user/login - 404 null application/problem+json; charset=utf-8 39.2011ms
+2025-05-06 16:14:32.986 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5083/api/user/login - application/json 62
+2025-05-06 16:14:32.992 -04:00 [INF] Executing endpoint 'TicTacToe.API.Controllers.UserController.Login (TicTacToe.API)'
+2025-05-06 16:14:32.994 -04:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TicTacToe.Shared.DTO.User.UserLoginDTO) on controller TicTacToe.API.Controllers.UserController (TicTacToe.API).
+2025-05-06 16:14:33.034 -04:00 [INF] Executed DbCommand (32ms) [Parameters=[@__email_0='?' (Size = 320)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[user_email], [u].[password], [u].[user_name]
+FROM [users] AS [u]
+WHERE [u].[user_email] = @__email_0
+2025-05-06 16:14:33.042 -04:00 [INF] Executed action TicTacToe.API.Controllers.UserController.Login (TicTacToe.API) in 42.0441ms
+2025-05-06 16:14:33.045 -04:00 [INF] Executed endpoint 'TicTacToe.API.Controllers.UserController.Login (TicTacToe.API)'
+2025-05-06 16:14:33.051 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TicTacToe.Application.Services.Auth.UserService.LoginUserAsync(UserLoginDTO userLoginDTO)
+   at TicTacToe.API.Controllers.UserController.Login(UserLoginDTO userLoginDTO) in C:\Users\Laem0\Desktop\Desarrollos\TicTacToe\TicTacToe.API\Controllers\UserController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-06 16:14:33.112 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5083/api/user/login - 500 null text/plain; charset=utf-8 126.0756ms
+2025-05-06 16:14:39.866 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5083/api/user/login - application/json 62
+2025-05-06 16:14:39.874 -04:00 [INF] Executing endpoint 'TicTacToe.API.Controllers.UserController.Login (TicTacToe.API)'
+2025-05-06 16:14:39.877 -04:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TicTacToe.Shared.DTO.User.UserLoginDTO) on controller TicTacToe.API.Controllers.UserController (TicTacToe.API).
+2025-05-06 16:14:39.886 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 320)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[user_email], [u].[password], [u].[user_name]
+FROM [users] AS [u]
+WHERE [u].[user_email] = @__email_0
+2025-05-06 16:14:39.893 -04:00 [INF] Executed action TicTacToe.API.Controllers.UserController.Login (TicTacToe.API) in 10.0047ms
+2025-05-06 16:14:39.897 -04:00 [INF] Executed endpoint 'TicTacToe.API.Controllers.UserController.Login (TicTacToe.API)'
+2025-05-06 16:14:39.901 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TicTacToe.Application.Services.Auth.UserService.LoginUserAsync(UserLoginDTO userLoginDTO)
+   at TicTacToe.API.Controllers.UserController.Login(UserLoginDTO userLoginDTO) in C:\Users\Laem0\Desktop\Desarrollos\TicTacToe\TicTacToe.API\Controllers\UserController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-05-06 16:14:39.917 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5083/api/user/login - 500 null text/plain; charset=utf-8 50.8962ms
+2025-05-06 16:15:10.281 -04:00 [INF] Now listening on: http://localhost:5083
+2025-05-06 16:15:10.342 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-06 16:15:10.346 -04:00 [INF] Hosting environment: Development
+2025-05-06 16:15:10.348 -04:00 [INF] Content root path: C:\Users\Laem0\Desktop\Desarrollos\TicTacToe\TicTacToe.API
+2025-05-06 16:15:14.889 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5083/api/user/login - application/json 62
+2025-05-06 16:15:14.946 -04:00 [WRN] Failed to determine the https port for redirect.
+2025-05-06 16:15:14.951 -04:00 [INF] Executing endpoint 'TicTacToe.API.Controllers.UserController.Login (TicTacToe.API)'
+2025-05-06 16:15:14.997 -04:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TicTacToe.Shared.DTO.User.UserLoginDTO) on controller TicTacToe.API.Controllers.UserController (TicTacToe.API).
+2025-05-06 16:15:16.430 -04:00 [INF] Executed DbCommand (55ms) [Parameters=[@__email_0='?' (Size = 320)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[user_email], [u].[password], [u].[user_name]
+FROM [users] AS [u]
+WHERE [u].[user_email] = @__email_0
+2025-05-06 16:15:16.571 -04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-06 16:15:16.613 -04:00 [INF] Executed action TicTacToe.API.Controllers.UserController.Login (TicTacToe.API) in 1605.1336ms
+2025-05-06 16:15:16.628 -04:00 [INF] Executed endpoint 'TicTacToe.API.Controllers.UserController.Login (TicTacToe.API)'
+2025-05-06 16:15:16.649 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5083/api/user/login - 200 null application/json; charset=utf-8 1761.6576ms
+2025-05-06 16:15:22.061 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5083/api/user/login - application/json 63
+2025-05-06 16:15:22.071 -04:00 [INF] Executing endpoint 'TicTacToe.API.Controllers.UserController.Login (TicTacToe.API)'
+2025-05-06 16:15:22.074 -04:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TicTacToe.Shared.DTO.User.UserLoginDTO) on controller TicTacToe.API.Controllers.UserController (TicTacToe.API).
+2025-05-06 16:15:22.117 -04:00 [INF] Executed DbCommand (4ms) [Parameters=[@__email_0='?' (Size = 320)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[user_email], [u].[password], [u].[user_name]
+FROM [users] AS [u]
+WHERE [u].[user_email] = @__email_0
+2025-05-06 16:15:22.123 -04:00 [WRN] Recurso no encontrado. TraceId: 0HNCCRAR7F5BN:00000002. Detalle: Email o contraseña erroneos.
+2025-05-06 16:15:22.126 -04:00 [INF] Executing NotFoundObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-05-06 16:15:22.161 -04:00 [INF] Executed action TicTacToe.API.Controllers.UserController.Login (TicTacToe.API) in 80.9275ms
+2025-05-06 16:15:22.165 -04:00 [INF] Executed endpoint 'TicTacToe.API.Controllers.UserController.Login (TicTacToe.API)'
+2025-05-06 16:15:22.168 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5083/api/user/login - 404 null application/problem+json; charset=utf-8 107.0837ms
+2025-05-06 16:15:30.868 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5083/api/user/login - application/json 63
+2025-05-06 16:15:30.874 -04:00 [INF] Executing endpoint 'TicTacToe.API.Controllers.UserController.Login (TicTacToe.API)'
+2025-05-06 16:15:30.879 -04:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TicTacToe.Shared.DTO.User.UserLoginDTO) on controller TicTacToe.API.Controllers.UserController (TicTacToe.API).
+2025-05-06 16:15:30.992 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 320)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[user_email], [u].[password], [u].[user_name]
+FROM [users] AS [u]
+WHERE [u].[user_email] = @__email_0
+2025-05-06 16:15:31.063 -04:00 [WRN] Recurso no encontrado. TraceId: 0HNCCRAR7F5BN:00000003. Detalle: Email o contraseña erroneos.
+2025-05-06 16:15:31.065 -04:00 [INF] Executing NotFoundObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-05-06 16:15:31.068 -04:00 [INF] Executed action TicTacToe.API.Controllers.UserController.Login (TicTacToe.API) in 184.0432ms
+2025-05-06 16:15:31.069 -04:00 [INF] Executed endpoint 'TicTacToe.API.Controllers.UserController.Login (TicTacToe.API)'
+2025-05-06 16:15:31.072 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5083/api/user/login - 404 null application/problem+json; charset=utf-8 204.2584ms
+2025-05-06 16:15:35.299 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5083/api/user/login - application/json 62
+2025-05-06 16:15:35.304 -04:00 [INF] Executing endpoint 'TicTacToe.API.Controllers.UserController.Login (TicTacToe.API)'
+2025-05-06 16:15:35.307 -04:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TicTacToe.Shared.DTO.User.UserLoginDTO) on controller TicTacToe.API.Controllers.UserController (TicTacToe.API).
+2025-05-06 16:15:35.318 -04:00 [INF] Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 320)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[user_id], [u].[user_email], [u].[password], [u].[user_name]
+FROM [users] AS [u]
+WHERE [u].[user_email] = @__email_0
+2025-05-06 16:15:35.386 -04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-06 16:15:35.389 -04:00 [INF] Executed action TicTacToe.API.Controllers.UserController.Login (TicTacToe.API) in 75.4539ms
+2025-05-06 16:15:35.393 -04:00 [INF] Executed endpoint 'TicTacToe.API.Controllers.UserController.Login (TicTacToe.API)'
+2025-05-06 16:15:35.396 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5083/api/user/login - 200 null application/json; charset=utf-8 97.1363ms

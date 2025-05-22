@@ -1,0 +1,1 @@
+dotnet ef database update --project TicTacToe.Persistence --startup-project TicTacToe.API

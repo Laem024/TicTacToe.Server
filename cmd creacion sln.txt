@@ -1,0 +1,79 @@
+- TicTacToe.API                (proyecto de presentación)
+- TicTacToe.Application        (interfaces y lógica de negocio)
+- TicTacToe.Domain             (entidades del dominio)
+- TicTacToe.Infrastructure     (servicios externos, EF Core, etc.)
+- TicTacToe.Shared             (DTOs, enums, respuestas comunes)
+
+
+
+dotnet new webapi -o MyMusic.Api
+dotnet new classlib -o MyMusic.Core
+dotnet new classlib -o MyMusic.Services
+dotnet new classlib -o MyMusic.Data
+
+
+dotnet new sln -n TicTacToe
+cd TicTacToe
+
+# Crear proyectos
+dotnet new webapi -n TicTacToe.API
+dotnet new classlib -n TicTacToe.Application
+dotnet new classlib -n TicTacToe.Domain
+dotnet new classlib -n TicTacToe.Infrastructure
+dotnet new classlib -n TicTacToe.Persistence
+dotnet new classlib -n TicTacToe.Shared
+
+# Agregar proyectos a la solución
+dotnet sln add TicTacToe.API/
+dotnet sln add TicTacToe.Application/
+dotnet sln add TicTacToe.Domain/
+dotnet sln add TicTacToe.Infrastructure/
+dotnet sln add TicTacToe.Persistence/
+dotnet sln add TicTacToe.Shared/
+
+# Referencias entre proyectos
+cd TicTacToe.API
+dotnet add reference ../TicTacToe.Application
+dotnet add reference ../TicTacToe.Persistence
+dotnet add reference ../TicTacToe.Infrastructure
+dotnet add reference ../TicTacToe.Shared
+
+cd ../TicTacToe.Application
+dotnet add reference ../TicTacToe.Domain
+dotnet add reference ../TicTacToe.Shared
+
+cd ../TicTacToe.Infrastructure
+dotnet add reference ../TicTacToe.Application
+dotnet add reference ../TicTacToe.Domain
+dotnet add reference ../TicTacToe.Persistence
+dotnet add reference ../TicTacToe.Shared
+
+cd ../TicTacToe.Persistence
+dotnet add reference ../TicTacToe.Domain
+dotnet add reference ../TicTacToe.Shared
+
+
+
+
+
+//Nugets
+cd TicTacToe.Persistence
+dotnet add package Microsoft.EntityFrameworkCore
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+dotnet add package Microsoft.EntityFrameworkCore.Tools
+
+
+
+
+//Se intala en la raiz de la solución en este casa \TicTacToe
+cd ..
+dotnet new tool-manifest
+dotnet tool install dotnet-ef
+
+
+
+//Se creo el archivo add-migration.ps1, para simplificar la ejecucion del comando para agregar las migraciones de dotnet-ef
+dotnet ef migrations add %1 --project TicTacToe.Persistence --startup-project TicTacToe.API
+
+//se ejecuta
+./add-migration.ps1 "nombre_de_la_migracion"

@@ -1,0 +1,17 @@
+C:\Users\Laem0\Desktop\Desarrollos\TicTacToe\TicTacToe.Application\bin\Debug\net9.0\TicTacToe.Application.deps.json
+C:\Users\Laem0\Desktop\Desarrollos\TicTacToe\TicTacToe.Application\bin\Debug\net9.0\TicTacToe.Application.dll
+C:\Users\Laem0\Desktop\Desarrollos\TicTacToe\TicTacToe.Application\bin\Debug\net9.0\TicTacToe.Application.pdb
+C:\Users\Laem0\Desktop\Desarrollos\TicTacToe\TicTacToe.Application\bin\Debug\net9.0\TicTacToe.Domain.dll
+C:\Users\Laem0\Desktop\Desarrollos\TicTacToe\TicTacToe.Application\bin\Debug\net9.0\TicTacToe.Domain.pdb
+C:\Users\Laem0\Desktop\Desarrollos\TicTacToe\TicTacToe.Application\obj\Debug\net9.0\TicTacToe.Application.csproj.AssemblyReference.cache
+C:\Users\Laem0\Desktop\Desarrollos\TicTacToe\TicTacToe.Application\obj\Debug\net9.0\TicTacToe.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Laem0\Desktop\Desarrollos\TicTacToe\TicTacToe.Application\obj\Debug\net9.0\TicTacToe.Application.AssemblyInfoInputs.cache
+C:\Users\Laem0\Desktop\Desarrollos\TicTacToe\TicTacToe.Application\obj\Debug\net9.0\TicTacToe.Application.AssemblyInfo.cs
+C:\Users\Laem0\Desktop\Desarrollos\TicTacToe\TicTacToe.Application\obj\Debug\net9.0\TicTacToe.Application.csproj.CoreCompileInputs.cache
+C:\Users\Laem0\Desktop\Desarrollos\TicTacToe\TicTacToe.Application\obj\Debug\net9.0\TicTacTo.E36E7A44.Up2Date
+C:\Users\Laem0\Desktop\Desarrollos\TicTacToe\TicTacToe.Application\obj\Debug\net9.0\TicTacToe.Application.dll
+C:\Users\Laem0\Desktop\Desarrollos\TicTacToe\TicTacToe.Application\obj\Debug\net9.0\refint\TicTacToe.Application.dll
+C:\Users\Laem0\Desktop\Desarrollos\TicTacToe\TicTacToe.Application\obj\Debug\net9.0\TicTacToe.Application.pdb
+C:\Users\Laem0\Desktop\Desarrollos\TicTacToe\TicTacToe.Application\obj\Debug\net9.0\ref\TicTacToe.Application.dll
+C:\Users\Laem0\Desktop\Desarrollos\TicTacToe\TicTacToe.Application\bin\Debug\net9.0\TicTacToe.Shared.dll
+C:\Users\Laem0\Desktop\Desarrollos\TicTacToe\TicTacToe.Application\bin\Debug\net9.0\TicTacToe.Shared.pdb

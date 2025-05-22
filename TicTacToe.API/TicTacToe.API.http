@@ -1,0 +1,18 @@
+@API_HostAddress = http://localhost:5083
+
+### Registro
+POST {{API_HostAddress}}/signup
+Content-Type: application/json
+
+{
+  "email": "prueba@example.com",
+  "userName": "usuario2",
+  "password": "Prueba123$",
+  "confirmPassword": "Prueba123$"
+}
+
+###
+
+### Obtener usuarios
+GET {{API_HostAddress}}/users
+Accept: application/json
